@@ -1,0 +1,63 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px
+}  
+.container{
+	width: 80%
+	margin:auto;
+	overflow: hidden;
+}
+header{
+	background: rgb(208, 173, 167);
+	color: rgb(173, 106, 108);
+	padding-top: 100px;
+	min-height:70px;
+	border-bottom: 10px solid;
+}
+	
+header a{
+	color: rgb(173, 106, 108);
+	text-transform: uppercase;
+	text-decoration-line: none;
+	font-size: 30px
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+header #brand{
+	float: left;
+	font-size: 30px
+}
+header #brand h1{
+	margin: 0;
+}
+header nav{
+	float:right;
+}
+header a:hover{
+	color: rgb(231, 230, 247);
+}
+
+#showcase{
+	min-height:900px;
+	background-color: rgb(232, 214, 203);
+	text-align: center;
+	margin-bottom: 70px;
+
+}
+#showcase h1{
+	color: rgb(173, 106, 108);
+	margin-top: 300px;
+	font-size: 200px;
+	margin-bottom:20px;
+}
+#showcase p{
+	font-size: 50px;
+	color:rgb(173, 106, 108);
+}
+footer{
+	background: rgb(208, 173, 167);
+}

@@ -1,0 +1,145 @@
+/*nececities*/ 
+@font-face{
+	src: url(LoversQuarrel-Regular.tff);
+	font-family: lovers_quarrel;
+}
+body{
+	display: block;
+	font-family: lovers_quarrel;
+	padding: 0;
+	margin: 0;
+	color: #626670; 
+	font-size: 16px;
+	line-height: 1.6em;
+	background-color: #E0D7D3;
+}
+.container{
+	widows: 80%;
+	margin: auto;
+	overflow: hidden;
+
+}
+/*headder and navbar*/
+#main-header{
+	background-color: #626670;
+	color: #FCDFCE;
+}
+#navbar{
+	background-color: #8A7D80;
+	color: #FCDFCE;
+}
+#nacbar ul{
+	padding: 0;
+	list-style: none;
+}
+#navbar li{
+	display: inline;
+}
+#navbar a{
+	color: #FCDFCE;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+	position: relative;
+	animation-name: navbar;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes navbar{
+	0%{
+		right: -400px;
+	}
+	100%{
+		right: 0;
+	}
+}
+#navbar a:hover{
+	border-bottom: #FCDFCE solid 5px;
+}
+/*for showcase/banner*/
+#showcase{ 
+	background-color: #E0D7D3;
+	background-position: center right;
+	height: 300px;
+	color: #FCDFCE;
+	margin-bottom: 30px;
+	text-align: center;
+}
+#showcase h1{
+	color: #626670;
+	font-size: 70px;
+	line-height: 1.3;
+	padding-top: 30px;
+	position: relative;
+	animation-name: heading;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes heading{
+	0%{
+		top: -200px;
+	}
+	100%{
+		top: 10px;
+	}
+}
+/*contents*/
+#main{
+	float: right;
+	width: 70%;
+	padding: 0 30px;
+	box-sizing: border-box;
+	position: relative;
+	animation-name: content;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes content{
+	0%{
+		right: -400px;
+	}
+	100%{
+		right: 0px;
+	}
+}
+#sidebar{
+	float: left;
+	width: 30%;
+	background-color: #BEC6C3; 
+	color: #626670;
+	padding: 30px;
+	box-sizing: border-box;
+	position: relative;
+	animation-name: side;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes side{
+	0%{
+		left: -400px;
+	}
+	100%{
+		left: 0;
+	}
+}
+#main-footer{
+	background-color: #626670;
+	color: #FCDFCE;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+@media(max-width: 600px){
+	#showcase{
+		font-size: 5px;
+	}
+	#main{
+		width: 100%;
+		float: none;
+	}
+	#sidebar{
+		width: 100%;
+		float: none;
+	}
+}
